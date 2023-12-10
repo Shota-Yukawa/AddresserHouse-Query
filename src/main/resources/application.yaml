@@ -1,0 +1,25 @@
+spring:
+  datasource:
+    url:  jdbc:postgresql://ah-postgres.cotg2onn7xlt.ap-northeast-1.rds.amazonaws.com:5432/query
+    username: query
+    password: query
+    driverClassName: org.postgresql.Driver
+  jackson:
+   time-zone: Asia/Tokyo
+
+server:
+  port: 8090
+  servlet:
+    context-path: /query
+  
+logging:
+  level:
+    org: 
+      hibernate:
+        SQL: debug
+      type:
+        descriptor:
+          sql: trace
+      springframework:
+        orm:
+          jpa: DEBUG
