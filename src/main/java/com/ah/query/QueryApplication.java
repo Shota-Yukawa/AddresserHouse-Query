@@ -7,7 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@ComponentScan({"com.ah.query", "com.ah.querydatasource"})
+@ComponentScan({"com.ah.query"})
 @EntityScan("com.ah.querydatasource.entity")
 @EnableJpaRepositories("com.ah.querydatasource.repository")
 public class QueryApplication {
